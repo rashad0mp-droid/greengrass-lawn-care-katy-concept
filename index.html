@@ -141,7 +141,6 @@ header.site{position:sticky;top:0;z-index:50;background:rgba(251,250,245,.86);ba
 .ba-wrap{display:grid;grid-template-columns:1fr 1.25fr;gap:56px;align-items:center}
 .ba{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3;box-shadow:var(--shadow);user-select:none;touch-action:pan-y;background:#000}
 .ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.ba .before{filter:sepia(.55) saturate(.55) hue-rotate(-12deg) brightness(.88) contrast(1.05)}
 .ba .after-clip{position:absolute;inset:0;clip-path:inset(0 0 0 50%)}
 .ba-handle{position:absolute;top:0;bottom:0;left:50%;width:3px;background:#fff;transform:translateX(-50%);pointer-events:none}
 .ba-handle::after{content:"";position:absolute;top:50%;left:50%;width:52px;height:52px;margin:-26px 0 0 -26px;border-radius:50%;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230F2E1D' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9 6-6 6 6 6M15 6l6 6-6 6'/%3E%3C/svg%3E") center/24px no-repeat;box-shadow:0 10px 24px rgba(0,0,0,.3)}
@@ -466,13 +465,13 @@ footer .brand-text span{color:rgba(255,255,255,.55)}
     </div>
     <div class="reveal">
       <div class="ba" id="ba">
-        <img class="before" src="images/lush-yard.jpg" alt="Yard before clean-up (illustrative)">
-        <div class="after-clip"><img src="images/lush-yard.jpg" alt="Yard after clean-up (illustrative)"></div>
+        <img class="before" src="images/yard-before.webp" width="1448" height="1086" alt="Illustration: a brick house with a badly overgrown, weedy front yard and shaggy shrubs">
+        <div class="after-clip"><img src="images/yard-after.webp" width="1448" height="1086" alt="Illustration: the same house with a freshly mowed lawn, crisp edges, trimmed shrubs and fresh mulch"></div>
         <span class="ba-handle" aria-hidden="true"></span>
         <span class="ba-label l">Before</span><span class="ba-label r">After</span>
         <input type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after">
       </div>
-      <p class="ba-note">PHOTO PLACEHOLDER: illustrative stock image. Replace with a real GreenGrass before/after pair from the 428 photos on the Google listing (with the owner's permission).</p>
+      <p class="ba-note">Illustration, not a real job: an AI-made example of the kind of turnaround we deliver. Real GreenGrass before/after photos go here (with the owner's permission).</p>
     </div>
   </div>
 </section>
